@@ -1,0 +1,60 @@
+.definition__title{
+  font-family: Oswald;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+.definition__item{
+  list-style: none;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 51px;
+  margin-right: 35px;
+  margin-bottom: 24px;
+
+}
+.definition__item--leaf::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/leaf.svg");
+  background-repeat: no-repeat;
+  left: 20px;
+}
+.definition__item--powder::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/powder.svg");
+  background-repeat: no-repeat;
+  left: 20px;
+}
+.definition__item--fork::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/fork.svg");
+  background-repeat: no-repeat;
+  left: 20px;
+}
+.definition__item--clock::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/clock.svg");
+  background-repeat: no-repeat;
+  left: 20px;
+}

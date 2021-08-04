@@ -1,0 +1,22 @@
+.page-header{
+  background-color: #FFFFFF;
+  outline: 2px solid tomato;
+}
+.site-list{
+  list-style: none;
+  .site-list__item{
+    font-family: Oswald, Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 24px;
+  }
+  .site-list__item a{
+    text-decoration: none;
+    color: #000000;
+  }
+}

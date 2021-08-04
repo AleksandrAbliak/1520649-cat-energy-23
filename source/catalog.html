@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="../source/css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -11,8 +12,8 @@
           <img class="page-header__logo-text" src="../source/img/logo-text.svg" alt="логотип cat energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
+        <button class="main-nav__toggle visually-hidden" type="button"><span>Открыть меню</span></button>
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
                 <a href="#">Главная</a>
@@ -30,10 +31,10 @@
     <main class="catalog-main">
       <h1 class="catalog-heading"></h1>
       <section class="section-card">
-        <div class="section-card__wraper">
+        <div class="section-card__wrapper">
           <img src="../source/img/catalog-img/product-1.png" alt="">
-          <h2>Cat Energy PRO 500 г</h2>
-          <table>
+          <h2 class="catalog-header">Cat Energy PRO 500 г</h2>
+          <table class="text">
             <tr>
               <td>Масса</td>
               <td>500 г</td>
@@ -46,12 +47,12 @@
               <td>700 Р</td>
             </tr>
           </table>
-          <button type="submit">отправить</button>
+          <button class="button" type="submit">отправить</button>
         </div>
-        <div class="section-card__wraper">
+        <div class="section-card__wrapper">
           <img src="../source/img/catalog-img/product-2.png" alt="">
-          <h2>Cat Energy PRO 1000 г</h2>
-          <table>
+          <h2 class="catalog-header">Cat Energy PRO 1000 г</h2>
+          <table class="text">
             <tr>
               <td>Масса</td>
               <td>1000 г</td>
@@ -64,12 +65,12 @@
               <td>1000 Р</td>
             </tr>
           </table>
-          <button type="submit">отправить</button>
+          <button class="button" type="submit">отправить</button>
         </div>
-        <div class="section-card__wraper">
+        <div class="section-card__wrapper">
           <img src="../source/img/catalog-img/product-3.png" alt="">
-          <h2>Cat Energy PRO 500 г</h2>
-          <table>
+          <h2 class="catalog-header">Cat Energy PRO 500 г</h2>
+          <table class="text">
             <tr>
               <td>Масса</td>
               <td>500 г</td>
@@ -82,12 +83,12 @@
               <td>700 Р</td>
             </tr>
           </table>
-          <button type="submit">отправить</button>
+          <button class="button" type="submit">отправить</button>
         </div>
-        <div class="section-card__wraper">
+        <div class="section-card__wrapper">
           <img src="../source/img/catalog-img/product-4.png" alt="">
-          <h2>Cat Energy PRO 1000 г</h2>
-          <table>
+          <h2 class="catalog-header">Cat Energy PRO 1000 г</h2>
+          <table class="text">
             <tr>
               <td>Масса</td>
               <td>1000 г</td>
@@ -100,12 +101,12 @@
               <td>1000 Р</td>
             </tr>
           </table>
-          <button type="submit">отправить</button>
+          <button class="button" type="submit">отправить</button>
         </div>
-        <div class="section-card__wraper">
+        <div class="section-card__wrapper">
           <img src="../source/img/catalog-img/product-5.png" alt="">
-          <h2>Cat Energy SLIM 500 г</h2>
-          <table>
+          <h2 class="catalog-header">Cat Energy SLIM 500 г</h2>
+          <table class="text">
             <tr>
               <td>Масса</td>
               <td>500 г</td>
@@ -118,12 +119,12 @@
               <td>400 Р</td>
             </tr>
           </table>
-          <button type="submit">отправить</button>
+          <button class="button" type="submit">отправить</button>
         </div>
-        <div class="section-card__wraper">
+        <div class="section-card__wrapper">
           <img src="../source/img/catalog-img/product-6.png" alt="">
-          <h2>Cat Energy SLIM 1000 г</h2>
-          <table>
+          <h2 class="catalog-header">Cat Energy SLIM 1000 г</h2>
+          <table class="text">
             <tr>
               <td>Масса</td>
               <td>1000 г</td>
@@ -136,12 +137,12 @@
               <td>700 Р</td>
             </tr>
           </table>
-          <button type="submit">отправить</button>
+          <button class="button" type="submit">отправить</button>
         </div>
-        <div class="section-card__wraper">
+        <div class="section-card__wrapper">
           <img src="../source/img/catalog-img/product-7.png" alt="">
-          <h2>Cat Energy SLIM 500 г</h2>
-          <table>
+          <h2 class="catalog-header">Cat Energy SLIM 500 г</h2>
+          <table class="text">
             <tr>
               <td>Масса</td>
               <td>500 г</td>
@@ -154,65 +155,71 @@
               <td>500 Р</td>
             </tr>
           </table>
-          <button type="submit">отправить</button>
+          <button class="button" type="submit">отправить</button>
         </div>
       </section>
       <section class="section-item">
-        <p>Показать еще 100500 товаров</p>
-        <p>На самом деле вкусов гораздо больше!</p>
-        <a href="#">показать все</a>
+        <p class="section-item__paragraph">Показать еще 100500 товаров</p>
+        <p class="text">На самом деле вкусов гораздо больше!</p>
+        <div class="button-link">
+          <a href="#">показать все</a>
+        </div>
       </section>
       <section class="additional-item">
         <h2 class="additional-item__heading">Дополнительный товар</h2>
         <div class="additional-item__product">
           <table>
             <tr>
-              <th>сахорозаменитель</th>
+              <th class="additional-item__th">сахорозаменитель</th>
             </tr>
-            <tr>
+            <tr class="additional-item__text">
               <td>1 упаковка (100г)</td>
               <td>200 г</td>
             </tr>
           </table>
-          <button type="button">заказать</button>
+          <button class="button" type="button">заказать</button>
         </div>
         <div class="additional-item__product">
           <table>
             <tr>
-              <th>Питьевая вода</th>
+              <th class="additional-item__th">Питьевая вода</th>
             </tr>
-            <tr>
+            <tr class="additional-item__text">
               <td>5 литров</td>
               <td>50 р</td>
             </tr>
           </table>
-          <button type="button">заказать</button>
+          <button class="button" type="button">заказать</button>
         </div>
         <div class="additional-item__product">
           <table>
             <tr>
-              <th>молоко</th>
+              <th class="additional-item__th">молоко</th>
             </tr>
-            <tr>
+            <tr class="additional-item__text">
               <td>1 литр</td>
               <td>100 г</td>
             </tr>
           </table>
-          <button type="button">заказать</button>
+          <button class="button" type="button">заказать</button>
         </div>
         <div class="additional-item__product">
           <table>
             <tr>
-              <th>витамины</th>
+              <th class="additional-item__th">витамины</th>
             </tr>
-            <tr>
+            <tr class="additional-item__text">
               <td>1 упаковка (30г)</td>
               <td>300 г</td>
             </tr>
           </table>
-          <button type="button">заказать</button>
+          <button class="button" type="button">заказать</button>
         </div>
       </section>
+      <div class="catalog-img">
+        <img class="catalog-img__cat" src="../source/img/cat-present.jpg" width="280" height="289" alt="">
+        <p class="catalog-img__text">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
     </main>
     <footer class="page-footer">
         <section class="contacts">

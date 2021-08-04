@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="../source/css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -11,8 +12,8 @@
           <img class="page-header__logo-text" src="../source/img/logo-text.svg" alt="логотип cat energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
+        <button class="main-nav__toggle visually-hidden" type="button"><span>Открыть меню</span></button>
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
                 <a href="#">Главная</a>
@@ -30,46 +31,46 @@
     <main class="form-main">
       <form  action="https://echo.htmlacademy.ru" method="post">
         <section class="section-form">
-          <h1>Подбор программы</h1>
-          <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <input type="text" name="" value="">
-          <label for=""></label>
-          <input type="text" name="" value="">
-          <label for=""></label>
-          <input type="text" name="" value="">
-          <label for=""></label>
-
-          <input type="radio" name="" value="">
-          <label for=""></label>
-          <input type="radio" name="" value="">
-          <label for=""></label>
-          <input type="radio" name="" value="">
-          <label for=""></label>
+          <h1 class="section-form__heading">Подбор программы</h1>
+          <p class="section-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <label class="label-item" for="name">имя:*</label>
+          <input class="input-name" id="name" type="text" value="">
+          <input class="input-weight" id="weight" type="text" value="">
+          <label class="label-item" for="weight">вес:</label>
+          <input class="input-age" id="age" type="text" value="">
+          <label class="label-item" for="age">возраст(лет):</label>
+        <div class="section-form__wrapper">
+          <input id="slimming" type="radio" value="">
+          <label class="label" for="slimming">похудение</label>
+          <input id="avoirdupois" type="radio" value="">
+          <label class="label" for="avoirdupois">набор массы</label>
+          <input id="advic" type="radio" value="">
+          <label class="label" for="advic">Не знаю (Нужен ваш совет)</label>
+        </div>
         </section>
-        <section class="section-form">
-          <h2>Контактные данные (владельца кота)</h2>
-          <input type="email" name="" value="">
-          <label for=""></label>
-          <input type="tel" name="" value="">
-          <label for=""></label>
+        <section class="section-contact">
+          <h2 class="section__header">Контактные данные (владельца кота)</h2>
+          <label class="label-item" for="email">Email:*</label>
+          <input id="email" type="email" value="">
+          <label class="label-item" for="tel">Телефон:*</label>
+          <input id="tel" type="tel" value="">
         </section>
-        <section class="section-form">
-          <h2>Комментарий</h2>
-          <input type="text" name="" value="">
-          <label for=""></label>
+        <section class="section-comment">
+          <h2 class="section__header">Комментарий</h2>
+          <input type="text" value="">
         </section>
-        <section class="section-form">
-          <h2>Дополнительно</h2>
-          <input type="checkbox" name="" value="">
-          <label for=""></label>
-          <input type="checkbox" name="" value="">
-          <label for=""></label>
-          <input type="checkbox" name="" value="">
-          <label for=""></label>
-          <input type="checkbox" name="" value="">
-          <label for=""></label>
-        </section class="section-button">
-        <button type="submit" name="button">отправить заявку</button>
+        <section class="section-additionally">
+          <h2 class="section__header">Дополнительно</h2>
+          <input id="sweetener" type="checkbox" value="">
+          <label class="label" for="sweetener">Сахарозаменитель</label>
+          <input id="water" type="checkbox" value="">
+          <label class="label" for="water">Питьевая вода</label>
+          <input id="milk" type="checkbox" value="">
+          <label class="label" for="milk">Молоко</label>
+          <input id="vitamins" type="checkbox" value="">
+          <label class="label" for="vitamins">Витамины</label>
+        </section>
+        <button class="button" type="submit" name="button">отправить заявку</button>
         <span>* — Обязательные поля</span>
       </form>
     </main>
@@ -108,7 +109,7 @@
         <section class="logo-htmlacademy">
           <a class="logo-htmlacademy__text logo-left" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="logo-htmlacademy__img logo-right" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
             </svg>
           </a>
         </section>
