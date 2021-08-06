@@ -1,28 +1,26 @@
-.definition__title{
-  font-family: Oswald;
+.definition__title {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  letter-spacing: 0em;
   text-align: center;
-
 }
-.definition__item{
+
+.definition__item {
   list-style: none;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  letter-spacing: 0em;
   text-align: left;
   margin-left: 51px;
   margin-right: 35px;
   margin-bottom: 24px;
-
 }
-.definition__item--leaf::before{
+
+.definition__item--leaf::before {
   content: "";
   position: absolute;
   width: 60px;
@@ -31,7 +29,8 @@
   background-repeat: no-repeat;
   left: 20px;
 }
-.definition__item--powder::before{
+
+.definition__item--powder::before {
   content: "";
   position: absolute;
   width: 60px;
@@ -40,7 +39,8 @@
   background-repeat: no-repeat;
   left: 20px;
 }
-.definition__item--fork::before{
+
+.definition__item--fork::before {
   content: "";
   position: absolute;
   width: 60px;
@@ -49,7 +49,8 @@
   background-repeat: no-repeat;
   left: 20px;
 }
-.definition__item--clock::before{
+
+.definition__item--clock::before {
   content: "";
   position: absolute;
   width: 60px;
