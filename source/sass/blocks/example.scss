@@ -3,7 +3,7 @@
 }
 
 .example__title {
-  font-family: "Oswald" "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -23,7 +23,7 @@
 }
 
 .example__heading {
-  font-family: "Oswald" "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -49,18 +49,4 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.cat__button {
-  width: 69px;
-  height: 31px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  background: none;
-  border: none;
 }
