@@ -1,5 +1,5 @@
 .contacts__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -10,7 +10,7 @@
 }
 
 .contacts__address {
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

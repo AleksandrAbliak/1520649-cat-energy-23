@@ -3,7 +3,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -12,7 +12,7 @@
 }
 
 .example__paragraph {
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -23,7 +23,7 @@
 }
 
 .example__heading {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -33,7 +33,7 @@
 }
 
 .example__text {
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -42,7 +42,7 @@
 }
 
 .example__cost {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

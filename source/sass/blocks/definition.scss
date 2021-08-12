@@ -1,5 +1,5 @@
 .definition__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -9,7 +9,7 @@
 
 .definition__item {
   list-style: none;
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

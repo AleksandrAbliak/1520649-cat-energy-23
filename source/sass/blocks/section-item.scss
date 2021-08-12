@@ -1,5 +1,5 @@
 .section-item__paragraph {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9,10 +9,9 @@
 }
 
 .section-item__link {
-  width: 279px;
-  height: 40px;
+  padding: 10px 20px;
   background-color: #f2f2f2;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

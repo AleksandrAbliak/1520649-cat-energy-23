@@ -1,8 +1,9 @@
 // Начните писать стили здесь
 @import "source/sass/global/fonts.scss";
+@import "source/sass/global/variables.scss";
 @import "source/sass/global/visually-hidden.scss";
-@import "source/sass/global/page-body.scss";
-@import "source/sass/blocks/header.scss";
+@import "source/sass/blocks/page-body.scss";
+@import "source/sass/blocks/page-header.scss";
 @import "source/sass/blocks/site-list.scss";
 @import "source/sass/blocks/button.scss";
 @import "source/sass/blocks/promo.scss";
@@ -17,7 +18,7 @@
 @import "source/sass/blocks/contacts.scss";
 @import "source/sass/blocks/contacts-background.scss";
 @import "source/sass/blocks/section-form.scss";
-@import "source/sass/blocks/section-contact.scss";
+@import "source/sass/blocks/section.scss";
 @import "source/sass/blocks/label.scss";
 @import "source/sass/blocks/label-item.scss";
 @import "source/sass/blocks/catalog-heading.scss";

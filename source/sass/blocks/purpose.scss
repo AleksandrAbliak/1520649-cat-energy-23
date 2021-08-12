@@ -1,7 +1,7 @@
 .purpose__item {
-  width: 280px;
-  height: 266px;
   background-color: #f2f2f2;
+  margin: 0 15px;
+  padding: 0 10px;
 
   &::before {
     content: "";
@@ -14,9 +14,9 @@
 }
 
 .purpose__item--cat {
-  width: 280px;
-  height: 266px;
   background-color: #f2f2f2;
+  margin: 0 15px;
+  padding: 0 10px;
 
   &::before {
     content: "";
@@ -29,7 +29,7 @@
 }
 
 .purpose__header {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -40,7 +40,7 @@
 }
 
 .purpose__text {
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -52,7 +52,7 @@
 }
 
 .purpose__link {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
