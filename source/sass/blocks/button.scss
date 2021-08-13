@@ -1,8 +1,7 @@
 .button {
-  width: 280px;
-  height: 40px;
+  padding: 10px 20px;
   background-color: #68b738;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

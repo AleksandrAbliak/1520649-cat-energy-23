@@ -1,0 +1,64 @@
+.purpose__item {
+  background-color: #f2f2f2;
+  margin: 0 15px;
+  padding: 0 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/cat-back.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.purpose__item--cat {
+  background-color: #f2f2f2;
+  margin: 0 15px;
+  padding: 0 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/puma-back.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.purpose__header {
+  font-family: $Oswald;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.purpose__text {
+  font-family: $Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 29px;
+  margin-right: 33px;
+}
+
+.purpose__link {
+  font-family: $Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
