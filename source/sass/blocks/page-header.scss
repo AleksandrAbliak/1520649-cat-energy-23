@@ -1,3 +1,43 @@
 .page-header {
   background-color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 60px;
+  padding-left: 10px;
+}
+
+.page-header__logo {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 38px;
+    background-image: url("../img/logo-cat.png");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 101px;
+    height: 18px;
+    background-image: url("../img/logo-text.svg");
+    background-repeat: no-repeat;
+    margin-top: 18px;
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo::before {
+    content: "";
+    position: absolute;
+    width: 174px;
+    height: 52px;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  .page-header__logo::after {
+    display: none;
+  }
 }

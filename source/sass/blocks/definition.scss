@@ -59,3 +59,44 @@
   background-repeat: no-repeat;
   left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .definition__title {
+    font-size: 60px;
+    line-height: 60px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .definition__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .definition__item--leaf {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .definition__item--powder {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .definition__item--fork {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .definition__item--clock {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .definition__list {
+    display: flex;
+  }
+}

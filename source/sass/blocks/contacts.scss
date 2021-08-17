@@ -19,3 +19,24 @@
   text-transform: uppercase;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__title {
+    width: 20%;
+    font-size: 20px;
+    line-height: 21px;
+    margin-left: 10px;
+  }
+
+  .contacts__address {
+    width: 20%;
+    font-size: 16px;
+    text-transform: lowercase;
+    margin-right: 10px;
+  }
+}
