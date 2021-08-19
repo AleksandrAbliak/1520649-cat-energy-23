@@ -1,9 +1,11 @@
 .page-footer {
-  background-color: #eaeaea;
+  background-color: $basic_grey;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
+    justify-content: space-around;
   }
 }
