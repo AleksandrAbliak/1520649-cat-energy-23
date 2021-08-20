@@ -15,9 +15,7 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  margin-left: 51px;
-  margin-right: 35px;
-  margin-bottom: 24px;
+  margin-left: 11%;
 }
 
 .definition__item--leaf::before {
@@ -58,4 +56,67 @@
   background-image: url("../img/clock.svg");
   background-repeat: no-repeat;
   left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .definition__title {
+    font-size: 60px;
+    line-height: 60px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .definition__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .definition__item--leaf {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .definition__item--powder {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .definition__item--fork {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .definition__item--clock {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .definition__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+  }
+
+  .definition__item--leaf {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .definition__item--powder {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .definition__item--fork {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .definition__item--clock {
+    grid-column: 4;
+    grid-row: 1;
+  }
 }
