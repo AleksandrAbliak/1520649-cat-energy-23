@@ -1,0 +1,31 @@
+.section-contact {
+  padding: 6%;
+  box-sizing: border-box;
+}
+
+.section-contact__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-contact__input-email {
+  width: 219px;
+  height: 45px;
+}
+
+.section-contact__input-tel {
+  width: 209px;
+  height: 45px;
+  margin-left: 18px;
+}
+
+.section-contact__inputrow {
+  display: inline-block;
+}
+
+@media (min-width: $desktop-width) {
+  .section-contact__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}

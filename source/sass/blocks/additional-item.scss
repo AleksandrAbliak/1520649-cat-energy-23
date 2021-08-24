@@ -1,3 +1,14 @@
+.additional-item {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.additional-item__product {
+  width: 80%;
+  margin: 0 auto;
+}
 .additional-item__heading {
   font-family: $Oswald;
   font-size: 24px;

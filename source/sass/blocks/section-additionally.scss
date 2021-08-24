@@ -1,0 +1,45 @@
+.section-additionally__wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: $Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+
+}
+
+@media (min-width: $tablet-width) {
+  .section-additionally {
+    padding-left: 70px;
+  }
+
+  .section-additionally__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: $Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-additionally {
+    padding-left: 110px;
+  }
+
+  .section-additionally__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-additionally__inputrow {
+    margin-right: 30px;
+  }
+}
