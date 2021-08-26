@@ -6,17 +6,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  letter-spacing: 0em;
   text-align: left;
   text-transform: uppercase;
-
 }
 
 @media (min-width: $tablet-width) {
-  .section-additionally {
-    padding-left: 70px;
-  }
-
   .section-additionally__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,10 +24,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .section-additionally {
-    padding-left: 110px;
-  }
-
   .section-additionally__wrapper {
     display: flex;
     flex-direction: row;
