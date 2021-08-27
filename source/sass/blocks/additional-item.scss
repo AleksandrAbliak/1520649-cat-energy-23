@@ -1,3 +1,15 @@
+.additional-item {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.additional-item__product {
+  display: flex;
+  flex-direction: column;
+}
+
 .additional-item__heading {
   font-family: $Oswald;
   font-size: 24px;
@@ -15,6 +27,7 @@
   line-height: 16px;
   text-align: center;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .additional-item__text {
@@ -25,4 +38,17 @@
   line-height: 14px;
   text-align: center;
   color: #444444;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item__wrapper {
+    width: 896px;
+    height: 288px;
+  }
+
+  .additional-item__product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
