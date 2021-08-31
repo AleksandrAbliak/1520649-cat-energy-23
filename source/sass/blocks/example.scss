@@ -8,7 +8,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
+  margin-left: 6.25%;
+  padding-top: 27px;
 }
 
 .example__paragraph {
@@ -18,7 +20,17 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  margin: 2% 6%;
+  padding: 2% 6.25%;
+}
+
+.example__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.example__wrapper-item {
+  width: 38.75%;
 }
 
 .example__heading {
@@ -64,7 +76,16 @@
   .example__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+  }
+
+  .example__wrapper-item {
+    width: 22.88%;
+  }
+
+  .example__wrapper-span {
+    flex: 1;
+    text-align: right;
   }
 
   .example__paragraph {

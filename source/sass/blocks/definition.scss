@@ -4,7 +4,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.definition__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .definition__item {
@@ -15,7 +22,7 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  margin-left: 11%;
+  margin-left: 31.25%;
 }
 
 .definition__item--leaf::before {
@@ -62,32 +69,42 @@
   .definition__title {
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
+  }
+
+  .definition__item {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
   }
 
   .definition__list {
+    font-size: 16px;
+    line-height: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
   .definition__item--leaf {
+    width: 32.48%;
     grid-column: 1;
     grid-row: 1;
   }
 
   .definition__item--powder {
+    width: 34.74%;
     grid-column: 2;
     grid-row: 1;
   }
 
   .definition__item--fork {
+    width: 34.88%;
     grid-column: 1;
     grid-row: 2;
   }
 
   .definition__item--clock {
+    width: 35.16%;
     grid-column: 2;
     grid-row: 2;
   }

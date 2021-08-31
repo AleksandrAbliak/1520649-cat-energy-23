@@ -1,3 +1,9 @@
-.footer-logo {
-  padding-top: 3%;
+.footer-logo__text {
+  padding: 39px 33% 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-logo__text {
+    padding-left: 0;
+  }
 }

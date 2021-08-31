@@ -6,7 +6,7 @@
   width: 100%;
 
 
-  &::before {
+  /*  &::before {
     content: "";
     position: absolute;
     width: 280px;
@@ -14,14 +14,14 @@
     background-image: url("../img/index-cat-energy.png");
     margin-top: 165px;
     margin-left: 20px;
-  }
+  }*/
 }
 
 .promo__title {
   position: absolute;
   top: 52px;
   left: 38px;
-  width: 249px;
+  width: 77.81%;
   height: 72px;
   font-family: $Oswald;
   font-size: 36px;
@@ -29,7 +29,7 @@
   font-weight: 400;
   line-height: 36px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
 }
 
 .promo__slogan {
@@ -42,5 +42,66 @@
   font-weight: 400;
   line-height: 14px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
+}
+
+.promo__button {
+  width: 87.5%;
+  margin: 138px 20px 22px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__title {
+    position: static;
+    font-family: $Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    text-align: left;
+    margin-top: 65px;
+    margin-left: 15.2%;
+    width: 414px;
+    height: 120px;
+  }
+
+  .promo__slogan {
+    position: static;
+    font-family: $Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $black;
+    padding-top: 41px;
+    margin-left: 15.2%;
+  }
+
+  .promo__button {
+    width: 31.7%;
+    margin-top: 49px;
+    margin-left: 15.2%;
+  }
+
+  .promo__img {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__title {
+    margin-left: 190px;
+    width: 414px;
+  }
+
+  .promo__slogan {
+    margin-left: 190px;
+  }
+
+  .promo__button {
+    width: 244px;
+    margin-left: 190px;
+  }
 }

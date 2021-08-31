@@ -1,36 +1,20 @@
 .purpose__item {
-  width: 80%;
+  width: 87.5%;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 10px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 53px;
-    background-image: url("../img/cat-back.png");
-    background-repeat: no-repeat;
-  }
 }
 
 .purpose__item--cat {
-  background-color: #f2f2f2;
+  background-color: $white;
   margin: 10px 15px;
   padding: 0 10px;
+}
 
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 67px;
-    height: 50px;
-    background-image: url("../img/puma-back.png");
-    background-repeat: no-repeat;
-  }
+.purpose__item--strong {
+  margin-top: 20px;
 }
 
 .purpose__header {
@@ -40,21 +24,20 @@
   font-weight: 400;
   line-height: 37px;
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
 .purpose__text {
-  width: 74%;
+  width: 81%;
   font-family: $Arial;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  margin-left: 20px;
-  margin-top: 29px;
-  margin-right: 33px;
+  margin: 29px 53px 23px 20px;
 }
 
 .purpose__link {
@@ -67,12 +50,19 @@
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .purpose__item {
-    align-items: flex-start;
-    padding-left: 5%;
+    width: 92.18%;
+    margin: 30 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
   }
 
   .purpose__header {
@@ -83,15 +73,66 @@
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+    margin-left: 7.4%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .purpose__text {
+    width: 95%;
+    font-family: $Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 7.4%;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .purpose__link {
+    font-family: $Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 7.4%;
+    margin-top: 48px;
+    margin-bottom: 53px;
+    grid-column: 1;
+    grid-row: 3;
   }
 }
 
 @media (min-width: $desktop-width) {
   .purpose {
     display: flex;
+    margin-left: 110px;
+  }
+
+  .purpose__header {
+    margin: 0 auto;
+    text-align: center;
   }
 
   .purpose__item {
-    width: 40%;
+    display: flex;
+    width: 570px;
+    height: 374px;
+  }
+
+  .purpose__text {
+    width: 467px;
+    padding-left: 51px;
+    padding-right: 52px;
+  }
+
+  .purpose__link {
+    padding: 51px;
+  }
+
+  .purpose__item--strong {
+    margin-top: 0;
+    margin-right: 110px;
   }
 }

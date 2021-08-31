@@ -1,6 +1,8 @@
 .section-card {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-card__wrapper {
@@ -40,7 +42,7 @@
   .section-card__wrapper {
     display: flex;
     flex-direction: column;
-    width: 324px;
+    width: 42.1%;
   }
 
   .section-card__img {
@@ -51,6 +53,6 @@
 
 @media (min-width: $desktop-width) {
   .section-card__wrapper {
-    width: 245px;
+    width: 22%;
   }
 }
