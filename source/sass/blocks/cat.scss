@@ -25,3 +25,13 @@
     text-align: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .cat__img {
+    display: none;
+  }
+
+  .cat__wrapper-slide {
+    margin-top: 466px;
+  }
+}

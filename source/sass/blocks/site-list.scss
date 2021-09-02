@@ -26,4 +26,25 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .site-list__item a {
+    font-family: $Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item a {
+    color: $white;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .site-list__item {
+    padding-bottom: 0;
+  }
 }

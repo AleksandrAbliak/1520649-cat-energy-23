@@ -1,10 +1,6 @@
 .main-nav {
   background-color: $white;
   width: 100%;
-  position: absolute;
-  top: 65px;
-  right: 0;
-  left: 0;
   z-index: 2;
 }
 
@@ -12,5 +8,19 @@
   .main-nav {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .main-nav__wrapper {
+    margin-right: 3.77%;
+    margin-top: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    position: absolute;
+    z-index: 1;
+    margin-right: 110px;
+    margin-top: 69px;
   }
 }

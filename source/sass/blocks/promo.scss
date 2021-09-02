@@ -6,7 +6,7 @@
   width: 100%;
 
 
-  /*  &::before {
+  &::before {
     content: "";
     position: absolute;
     width: 280px;
@@ -14,7 +14,7 @@
     background-image: url("../img/index-cat-energy.png");
     margin-top: 165px;
     margin-left: 20px;
-  }*/
+  }
 }
 
 .promo__title {
@@ -51,6 +51,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    height: 872px;
+  }
+
   .promo__title {
     position: static;
     font-family: $Oswald;
@@ -75,11 +79,24 @@
     line-height: 20px;
     text-align: left;
     color: $black;
-    padding-top: 41px;
+    padding-top: 0;
     margin-left: 15.2%;
   }
 
+  .promo__wrapper::before {
+    content: "";
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    background-image: url("../img/index-can-tablet.png");
+    background-repeat: no-repeat;
+    margin-top: 211px;
+    margin-left: 24px;
+  }
+
   .promo__button {
+    position: absolute;
+    z-index: 2;
     width: 31.7%;
     margin-top: 49px;
     margin-left: 15.2%;
@@ -91,7 +108,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    height: 669px;
+  }
+
   .promo__title {
+    padding-top: 111px;
     margin-left: 190px;
     width: 414px;
   }
@@ -103,5 +125,27 @@
   .promo__button {
     width: 244px;
     margin-left: 190px;
+  }
+
+  .promo__wrapper::before {
+    content: "";
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    background-image: url("../img/index-can.png");
+    background-repeat: no-repeat;
+    margin-top: 32px;
+    margin-left: 558px;
+    z-index: 1;
+  }
+
+  .promo__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 694px;
+    background-image: url("../img/index-background-desktop.jpg");
   }
 }
