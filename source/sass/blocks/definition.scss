@@ -16,7 +16,6 @@
 
 .definition__item {
   list-style: none;
-  position: relative;
   font-family: $Arial;
   font-size: 14px;
   font-style: normal;
@@ -111,116 +110,116 @@
       background-repeat: no-repeat;
       left: 1px;
       bottom: 111px;
-    }
 
-    &::after {
-      content: "1";
+      &::after {
+        content: "1";
+        position: absolute;
+        color: $basic_grey;
+        font-family: $Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 280px;
+        line-height: 280px;
+        bottom: -37px;
+        margin-left: 121px;
+      }
+    }
+  }
+
+  .definition__item--powder {
+    width: 71.74%;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: flex-end;
+    margin-top: 0;
+
+    &::before {
+      content: "";
       position: absolute;
-      color: $basic_grey;
-      font-family: $Oswald;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 280px;
-      line-height: 280px;
-      bottom: -37px;
-      margin-left: 121px;
+      width: 80px;
+      height: 80px;
+      background-image: url("../img/powder-tablet.svg");
+      background-repeat: no-repeat;
+      left: 1px;
+      bottom: 111px;
+
+      &::after {
+        content: "2";
+        position: absolute;
+        color: $basic_grey;
+        font-family: $Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 280px;
+        line-height: 280px;
+        bottom: -37px;
+        margin-left: 121px;
+      }
     }
   }
-}
 
-.definition__item--powder {
-  width: 71.74%;
-  grid-column: 2;
-  grid-row: 1;
-  justify-content: flex-end;
-  margin-top: 0;
+  .definition__item--fork {
+    width: 72.88%;
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: flex-end;
+    margin-top: 72px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/powder-tablet.svg");
-    background-repeat: no-repeat;
-    left: 1px;
-    bottom: 111px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-image: url("../img/fork-tablet.svg");
+      background-repeat: no-repeat;
+      left: 1px;
+      bottom: 111px;
+
+      &::after {
+        content: "3";
+        position: absolute;
+        color: $basic_grey;
+        font-family: $Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 280px;
+        line-height: 280px;
+        bottom: -37px;
+        margin-left: 121px;
+      }
+    }
   }
 
-  &::after {
-    content: "2";
-    position: absolute;
-    color: $basic_grey;
-    font-family: $Oswald;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 280px;
-    line-height: 280px;
-    bottom: -37px;
-    margin-left: 121px;
-  }
-}
+  .definition__item--clock {
+    width: 71.16%;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: flex-end;
+    margin-top: 0;
 
-.definition__item--fork {
-  width: 72.88%;
-  grid-column: 1;
-  grid-row: 2;
-  justify-content: flex-end;
-  margin-top: 72px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-image: url("../img/clock-tablet.svg");
+      background-repeat: no-repeat;
+      left: 1px;
+      bottom: 111px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/fork-tablet.svg");
-    background-repeat: no-repeat;
-    left: 1px;
-    bottom: 111px;
-  }
-
-  &::after {
-    content: "3";
-    position: absolute;
-    color: $basic_grey;
-    font-family: $Oswald;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 280px;
-    line-height: 280px;
-    bottom: -37px;
-    margin-left: 121px;
-  }
-}
-
-.definition__item--clock {
-  width: 71.16%;
-  grid-column: 2;
-  grid-row: 2;
-  justify-content: flex-end;
-  margin-top: 0;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/clock-tablet.svg");
-    background-repeat: no-repeat;
-    left: 1px;
-    bottom: 111px;
-  }
-
-  &::after {
-    content: "4";
-    position: absolute;
-    color: $basic_grey;
-    font-family: $Oswald;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 280px;
-    line-height: 280px;
-    bottom: -37px;
-    margin-left: 121px;
+      &::after {
+        content: "4";
+        position: absolute;
+        color: $basic_grey;
+        font-family: $Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 280px;
+        line-height: 280px;
+        bottom: -37px;
+        margin-left: 121px;
+      }
+    }
   }
 }
 
@@ -240,11 +239,11 @@
 
     &::before {
       bottom: 155px;
-    }
 
-    &::after {
-      margin-left: 100px;
-      bottom: -4px;
+      &::after {
+        margin-left: 100px;
+        bottom: -4px;
+      }
     }
   }
 
@@ -256,11 +255,11 @@
 
     &::before {
       bottom: 155px;
-    }
 
-    &::after {
-      margin-left: 100px;
-      bottom: -4px;
+      &::after {
+        margin-left: 100px;
+        bottom: -4px;
+      }
     }
   }
 
@@ -273,11 +272,11 @@
 
     &::before {
       bottom: 155px;
-    }
 
-    &::after {
-      margin-left: 100px;
-      bottom: -4px;
+      &::after {
+        margin-left: 100px;
+        bottom: -4px;
+      }
     }
   }
 
@@ -289,11 +288,11 @@
 
     &::before {
       bottom: 155px;
-    }
 
-    &::after {
-      margin-left: 100px;
-      bottom: -4px;
+      &::after {
+        margin-left: 100px;
+        bottom: -4px;
+      }
     }
   }
 }

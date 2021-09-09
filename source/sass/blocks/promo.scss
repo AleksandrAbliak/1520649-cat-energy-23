@@ -46,9 +46,16 @@
   color: $white;
 }
 
+.promo__wrapper-button {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 134px;
+  padding-bottom: 30px;
+}
+
 .promo__button {
-  width: 87.5%;
-  margin: 138px 20px 22px 20px;
+  width: 280px;
+
 }
 
 @media (min-width: $tablet-width) {
