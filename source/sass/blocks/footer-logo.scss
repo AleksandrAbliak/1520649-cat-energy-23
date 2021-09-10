@@ -1,5 +1,10 @@
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-logo__text {
-  padding: 39px 33% 32px;
+  padding: 39px 0 32px;
 }
 
 @media (min-width: $tablet-width) {

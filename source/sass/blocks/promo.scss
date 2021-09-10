@@ -4,26 +4,19 @@
 
 .promo__wrapper {
   width: 100%;
-  position: relative;
 
 
   &::before {
     content: "";
     position: absolute;
-    width: 280px;
+    width: 320px;
     height: 270px;
-    background-image: url("../img/index-cat-energy.png");
-    margin-top: 165px;
-    margin-left: 20px;
+    background-image: url("../img/index-background-cat.jpg");
+    z-index: -1;
   }
 }
 
 .promo__title {
-  position: absolute;
-  top: 52px;
-  left: 38px;
-  width: 77.81%;
-  height: 72px;
   font-family: $Oswald;
   font-size: 36px;
   font-style: normal;
@@ -34,9 +27,6 @@
 }
 
 .promo__slogan {
-  position: absolute;
-  top: 167px;
-  left: 75px;
   font-family: $Oswald;
   font-size: 14px;
   font-style: normal;
@@ -46,10 +36,13 @@
   color: $white;
 }
 
+.promo__img {
+  margin-left: 20px;
+}
+
 .promo__wrapper-button {
   width: 280px;
   margin: 0 auto;
-  padding-top: 134px;
   padding-bottom: 30px;
 }
 
@@ -59,12 +52,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo {
-    height: 872px;
-  }
 
   .promo__title {
-    position: static;
     font-family: $Oswald;
     font-style: normal;
     font-weight: normal;
@@ -73,13 +62,10 @@
     color: $black;
     text-align: left;
     margin-top: 65px;
-    margin-left: 15.2%;
     width: 414px;
-    height: 120px;
   }
 
   .promo__slogan {
-    position: static;
     font-family: $Oswald;
     font-style: normal;
     font-weight: normal;
@@ -88,18 +74,14 @@
     text-align: left;
     color: $black;
     padding-top: 0;
-    margin-left: 15.2%;
+  }
+
+  .promo__wrapper {
+    padding-left: 117px;
   }
 
   .promo__wrapper::before {
-    content: "";
-    position: absolute;
-    width: 709px;
-    height: 609px;
-    background-image: url("../img/index-can-tablet.png");
-    background-repeat: no-repeat;
-    margin-top: 211px;
-    margin-left: 24px;
+    display: none;
   }
 
   .promo__button {
@@ -111,7 +93,11 @@
   }
 
   .promo__img {
-    display: none;
+
+  }
+
+  .promo__background {
+    background-color: $white;
   }
 }
 
@@ -133,6 +119,10 @@
   .promo__button {
     width: 244px;
     margin-left: 190px;
+  }
+
+  .promo__wrapper {
+    padding-left: 0;
   }
 
   .promo__wrapper::before {

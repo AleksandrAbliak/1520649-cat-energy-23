@@ -27,6 +27,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 42px;
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .page-header__logo {
+    margin-left: 30px;
+  }
+
   .page-header__logo::before {
     content: "";
     position: absolute;
@@ -38,5 +49,18 @@
 
   .page-header__logo::after {
     display: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 69px;
+  }
+
+  .page-header__logo {
+    margin-left: 0;
   }
 }

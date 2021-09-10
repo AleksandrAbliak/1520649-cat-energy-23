@@ -1,6 +1,5 @@
 .site-list {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -11,8 +10,7 @@
   font-weight: 500;
   line-height: 20px;
   text-align: center;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding-top: 46px;
 }
 
 .site-list__item a {
@@ -22,9 +20,13 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    width: 460px;
     display: flex;
     justify-content: space-between;
+    margin: 0;
+  }
+
+  .site-list__item {
+    padding-top: 0;
   }
 
   .site-list__item a {

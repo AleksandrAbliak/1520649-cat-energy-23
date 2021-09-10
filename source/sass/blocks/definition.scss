@@ -70,11 +70,10 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    margin-left: 30px;
   }
 
   .definition__item {
-    display: flex;
-    flex-direction: column;
     position: relative;
     font-size: 16px;
     line-height: 24px;
@@ -84,6 +83,12 @@
 
   .definition__item p {
     z-index: 1;
+    margin-top: 100px;
+  }
+
+  .definition__wrapper {
+    width: $tablet-width;
+    margin: 0 auto;
   }
 
   .definition__list {
@@ -91,14 +96,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 122px;
-    margin-top: 165px;
   }
 
   .definition__item--leaf {
     width: 64.48%;
     grid-column: 1;
     grid-row: 1;
-    justify-content: flex-end;
+    margin-top: 0;
 
 
     &::before {
@@ -106,10 +110,10 @@
       position: absolute;
       width: 80px;
       height: 80px;
-      background-image: url("../img/leaf-tablet.svg");
       background-repeat: no-repeat;
-      left: 1px;
-      bottom: 111px;
+      background-size: cover;
+      left: 0;
+      top: 0;
 
       &::after {
         content: "1";
@@ -130,7 +134,6 @@
     width: 71.74%;
     grid-column: 2;
     grid-row: 1;
-    justify-content: flex-end;
     margin-top: 0;
 
     &::before {
@@ -138,10 +141,10 @@
       position: absolute;
       width: 80px;
       height: 80px;
-      background-image: url("../img/powder-tablet.svg");
       background-repeat: no-repeat;
-      left: 1px;
-      bottom: 111px;
+      background-size: cover;
+      left: 0;
+      top: 0;
 
       &::after {
         content: "2";
@@ -162,18 +165,17 @@
     width: 72.88%;
     grid-column: 1;
     grid-row: 2;
-    justify-content: flex-end;
-    margin-top: 72px;
+    margin-top: 0;
 
     &::before {
       content: "";
       position: absolute;
       width: 80px;
       height: 80px;
-      background-image: url("../img/fork-tablet.svg");
       background-repeat: no-repeat;
-      left: 1px;
-      bottom: 111px;
+      background-size: cover;
+      left: 0;
+      top: 0;
 
       &::after {
         content: "3";
@@ -202,10 +204,10 @@
       position: absolute;
       width: 80px;
       height: 80px;
-      background-image: url("../img/clock-tablet.svg");
       background-repeat: no-repeat;
-      left: 1px;
-      bottom: 111px;
+      background-size: cover;
+      left: 0;
+      top: 0;
 
       &::after {
         content: "4";
@@ -229,6 +231,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: none;
     margin-bottom: 110px;
+  }
+
+  .definition__wrapper {
+    width: $desktop-width;
+    margin: 0 auto;
   }
 
   .definition__item--leaf {
