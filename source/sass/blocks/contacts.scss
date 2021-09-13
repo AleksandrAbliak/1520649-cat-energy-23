@@ -28,24 +28,26 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    height: 201px;
     display: flex;
     justify-content: space-between;
+    padding: 0;
   }
 
   .contacts__title {
     width: 20%;
     font-size: 20px;
     line-height: 21px;
-    margin-top: 66px;
-    margin-left: 9.2%;
+    margin-top: 65px;
+    margin-bottom: 62px;
+    margin-left: 71px;
   }
 
   .contacts__address {
     width: 25%;
-    padding-top: 62px;
+    margin-top: 65px;
+    margin-bottom: 62px;
     font-size: 16px;
-    margin-right: 9.2%;
+    margin-right: 71px;
     text-align: right;
   }
 }

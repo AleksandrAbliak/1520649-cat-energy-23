@@ -103,26 +103,31 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    height: 669px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .promo__title {
     padding-top: 111px;
-    margin-left: 190px;
     width: 414px;
-  }
-
-  .promo__slogan {
-    margin-left: 190px;
+    margin-top: 0;
   }
 
   .promo__button {
+    position: relative;
     width: 244px;
-    margin-left: 190px;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .promo__wrapper {
-    padding-left: 0;
+    width: auto;
+    margin: 0 auto;
+    padding-left: 190px;
+  }
+
+  .promo__wrapper-button {
+    margin: 0;
   }
 
   .promo__wrapper::before {
@@ -145,5 +150,11 @@
     width: 720px;
     height: 694px;
     background-image: url("../img/index-background-desktop.jpg");
+  }
+
+  .promo__img {
+    z-index: 1;
+    width: 552px;
+    height: 499px;
   }
 }
