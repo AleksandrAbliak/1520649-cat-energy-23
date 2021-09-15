@@ -58,13 +58,13 @@
     text-transform: uppercase;
   }
 
-   td:first-child {
+  td:first-child {
     text-align: left;
   }
 
-   td:last-child {
-     text-align: right;
-   }
+  td:last-child {
+    text-align: right;
+  }
 
   .section-card__img {
     width: 168px;
@@ -90,6 +90,7 @@
     width: 1220px;
     margin: 0 auto;
   }
+
   .section-card__wrapper {
     width: 22%;
   }

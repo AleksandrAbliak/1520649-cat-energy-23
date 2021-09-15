@@ -30,6 +30,7 @@
     width: $tablet-width;
     margin: 0 auto;
   }
+
   .section__header {
     padding-left: 70px;
     margin-left: 0;
@@ -45,25 +46,21 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .section-contact__wrapper {
     display: flex;
     flex-direction: row;
     margin-left: 110px;
+    justify-content: space-between;
   }
 
   .section-contact {
     width: $desktop-width;
     margin: 0 auto;
   }
+
   .section__header {
     padding-left: 110px;
     margin-left: 0;
-  }
-
-  .section-contact__wrapper {
-    margin-left: 110px;
-    justify-content: space-between;
   }
 
   .section-contact__inputrow {
@@ -82,5 +79,4 @@
     margin-top: 14px;
     margin-right: 110px;
   }
-
 }

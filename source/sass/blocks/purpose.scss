@@ -16,12 +16,12 @@
 }
 
 .purpose__item--fit::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 53px;
-    background-image: url("../img/cat-fit-mobile.svg");
-    background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/cat-fit-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 .purpose__item--strong {
@@ -97,15 +97,15 @@
   }
 
   .purpose__item--fit::before {
-      content: "";
-      position: relative;
-      width: 200px;
-      height: 211px;
-      background-image: url("../img/cat-fit-tablet.png");
-      background-repeat: no-repeat;
-      grid-column: 2 / 3;
-      grid-row: 2;
-      margin: 0 auto;
+    content: "";
+    position: relative;
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/cat-fit-tablet.png");
+    background-repeat: no-repeat;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    margin: 0 auto;
   }
 
   .purpose__item--strong::before {
@@ -196,13 +196,13 @@
   }
 
   .purpose__item--fit::before {
-      content: "";
-      position: absolute;
-      width: 100px;
-      height: 106px;
-      background-image: url("../img/cat-fit-desktop.png");
-      background-repeat: no-repeat;
-      margin-bottom: 193px;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 106px;
+    background-image: url("../img/cat-fit-desktop.png");
+    background-repeat: no-repeat;
+    margin-bottom: 193px;
   }
 
   .purpose__item--strong::before {
