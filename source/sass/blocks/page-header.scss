@@ -4,6 +4,12 @@
   padding-left: 3.57%;
 }
 
+.page-header__logo-text {
+  width: 101px;
+  height: 18px;
+  margin-left: 69px;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     padding-top: 42px;
@@ -13,20 +19,9 @@
   }
 
   .page-header__logo {
-    margin-left: 30px;
-  }
-
-  .page-header__logo::before {
-    content: "";
-    position: absolute;
     width: 174px;
     height: 52px;
-    background-image: url("../img/logo-tablet.svg");
-    background-repeat: no-repeat;
-  }
-
-  .page-header__logo::after {
-    display: none;
+    margin-left: 30px;
   }
 }
 

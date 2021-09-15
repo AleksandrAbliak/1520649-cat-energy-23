@@ -71,10 +71,12 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    width: 708px;
     background-color: $white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding: 0;
   }
 
   .example__title {
@@ -139,17 +141,17 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    width: $desktop-width;
     background-color: #f2f2f2;
     padding-top: 0;
     padding-bottom: 0;
+    display: block;
   }
 
   .example__container {
-    width: auto;
-    padding-left: 110px;
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .example__title {
@@ -161,7 +163,6 @@
 
   .example__paragraph {
     grid-column: 1;
-    margin-top: 147px;
   }
 
   .example__text {
@@ -174,6 +175,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column: 1 / 2;
+    width: 436px;
   }
 
   .example__wrapper-item {
@@ -181,11 +183,10 @@
   }
 
   .example__wrapper-span {
-    flex-direction: row;
-    flex: none;
-    display: flex;
-    justify-content: center;
-    grid-column: 1;
+    grid-column: 1 / 3;
+    display: inline-grid;
+    justify-content: space-around;
+    margin-right: 0;
   }
 
   .example--weight {
@@ -201,10 +202,7 @@
 
   .exampele__value {
     margin-top: 13px;
-  }
-
-  .example__cost {
-    margin-right: 92px;
+    grid-column: 2;
   }
 
   .example__img {
@@ -224,10 +222,10 @@
     &::after {
       content: "";
       position: absolute;
-      width: 395px;
+      width: 365px;
       height: 570px;
       background-image: url("../img/after-desktop.png");
-      margin-left: 366px;
+      margin-left: 356px;
       margin-top: -570px;
     }
   }

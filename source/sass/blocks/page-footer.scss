@@ -1,12 +1,35 @@
 .page-footer {
   background-color: $basic_grey;
-  width: 100%;
+  width: 320px;
+}
+
+.page-footer__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    width: $tablet-width;
+  }
+
+  .page-footer__container {
+    width: 708px;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+  }
+
+  .page-footer__container {
+    width: 1220px;
   }
 }
