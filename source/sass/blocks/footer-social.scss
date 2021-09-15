@@ -1,5 +1,15 @@
 .footer-social {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 3%;
+  padding-top: 20px;
+  padding-left: 93px;
+  padding-bottom: 21px;
+  padding-right: 97px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-social {
+    width: 18.22%;
+    padding: 0;
+  }
 }

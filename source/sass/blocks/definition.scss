@@ -4,7 +4,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.definition__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .definition__item {
@@ -15,7 +22,7 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  margin-left: 11%;
+  margin-left: 31.25%;
 }
 
 .definition__item--leaf::before {
@@ -62,61 +69,237 @@
   .definition__title {
     font-size: 60px;
     line-height: 60px;
-    display: flex;
-    align-items: flex-start;
+    text-align: left;
+  }
+
+  .definition__item {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 30px;
+    margin-top: 72px;
+  }
+
+  .definition__item p {
+    z-index: 1;
+    margin-top: 100px;
+  }
+
+  .definition__wrapper {
+    width: $tablet-width;
+    margin: 0 auto;
   }
 
   .definition__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-gap: 122px;
   }
 
   .definition__item--leaf {
     grid-column: 1;
     grid-row: 1;
+    margin-top: 0;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 0;
+      top: 0;
+
+      &::after {
+        content: "1";
+        position: absolute;
+        color: $basic_grey;
+        font-family: $Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 280px;
+        line-height: 280px;
+        bottom: -37px;
+        margin-left: 121px;
+      }
+    }
   }
 
   .definition__item--powder {
     grid-column: 2;
     grid-row: 1;
+    margin-top: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 0;
+      top: 0;
+
+      &::after {
+        content: "2";
+        position: absolute;
+        color: $basic_grey;
+        font-family: $Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 280px;
+        line-height: 280px;
+        bottom: -37px;
+        margin-left: 121px;
+      }
+    }
   }
 
   .definition__item--fork {
     grid-column: 1;
     grid-row: 2;
+    margin-top: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 0;
+      top: 0;
+
+      &::after {
+        content: "3";
+        position: absolute;
+        color: $basic_grey;
+        font-family: $Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 280px;
+        line-height: 280px;
+        bottom: -37px;
+        margin-left: 121px;
+      }
+    }
   }
 
   .definition__item--clock {
     grid-column: 2;
     grid-row: 2;
+    justify-content: flex-end;
+    margin-top: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 0;
+      top: 0;
+
+      &::after {
+        content: "4";
+        position: absolute;
+        color: $basic_grey;
+        font-family: $Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 280px;
+        line-height: 280px;
+        bottom: -37px;
+        margin-left: 121px;
+      }
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .definition__item {
+    margin-left: 0;
+  }
+
+  .definition__title {
+    margin-left: 0;
+  }
+
   .definition__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
     grid-template-rows: none;
+    margin-bottom: 110px;
+  }
+
+  .definition__wrapper {
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .definition__item--leaf {
+    justify-content: center;
     grid-column: 1;
     grid-row: 1;
+
+    &::before {
+      bottom: 155px;
+
+      &::after {
+        margin-left: 100px;
+        bottom: -4px;
+      }
+    }
   }
 
   .definition__item--powder {
+    justify-content: center;
     grid-column: 2;
     grid-row: 1;
+
+    &::before {
+      bottom: 155px;
+
+      &::after {
+        margin-left: 100px;
+        bottom: -4px;
+      }
+    }
   }
 
   .definition__item--fork {
+    justify-content: center;
     grid-column: 3;
     grid-row: 1;
+    margin-top: 0;
+
+    &::before {
+      bottom: 155px;
+
+      &::after {
+        margin-left: 100px;
+        bottom: -4px;
+      }
+    }
   }
 
   .definition__item--clock {
+    justify-content: center;
     grid-column: 4;
     grid-row: 1;
+
+    &::before {
+      bottom: 155px;
+
+      &::after {
+        margin-left: 100px;
+        bottom: -4px;
+      }
+    }
   }
 }

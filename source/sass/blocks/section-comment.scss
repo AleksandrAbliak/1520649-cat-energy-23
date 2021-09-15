@@ -1,10 +1,40 @@
 .section-comment {
-  padding-left: 8%;
-  padding-right: 8%;
+  width: 320px;
+  margin: 0 auto;
 }
 
 
 .section-comment__input {
-  width: 80%;
+  width: 280px;
   height: 150px;
+  margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .section-comment {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .section-comment__input {
+    width: 631px;
+    height: 174px;
+    margin-top: 76px;
+    margin-bottom: 65px;
+    margin-left: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-comment {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .section-comment__input {
+    width: 1220px;
+    margin-top: 76px;
+    margin-bottom: 67px;
+    margin-left: 110px;
+  }
 }

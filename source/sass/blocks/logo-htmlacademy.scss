@@ -1,3 +1,8 @@
+.logo-htmlacademy {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo-htmlacademy__text {
   font-family: $Arial;
   font-size: 16px;
@@ -9,4 +14,10 @@
   text-decoration: none;
   color: #444444;
   padding-top: 3%;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-htmlacademy {
+    width: 23%;
+  }
 }

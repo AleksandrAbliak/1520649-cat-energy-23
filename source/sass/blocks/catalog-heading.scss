@@ -8,3 +8,11 @@
   color: $black;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-heading {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+  }
+}
