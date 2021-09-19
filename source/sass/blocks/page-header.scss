@@ -16,6 +16,7 @@
     width: 768px;
     margin: 0 auto;
     padding-left: 0;
+    display: flex;
   }
 
   .page-header__logo {
@@ -35,5 +36,13 @@
 
   .page-header__logo {
     margin-left: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }

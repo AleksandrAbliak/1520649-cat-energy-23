@@ -5,6 +5,16 @@
 .cat__wrapper-slide {
   display: flex;
   justify-content: space-around;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 14px;
+    background-image: url("../img/slider-mobile.svg");
+    background-repeat: no-repeat;
+    margin-top: 9px;
+  }
 }
 
 .cat__button {
@@ -18,12 +28,6 @@
   background: none;
   border: none;
   padding: 5px 5px;
-}
-
-@media (min-width: $tablet-width) {
-  .cat__wrapper {
-    text-align: center;
-  }
 }
 
 @media (min-width: $desktop-width) {

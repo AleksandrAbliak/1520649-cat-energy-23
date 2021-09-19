@@ -22,7 +22,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-                <a href="#">Главная</a>
+                <a class="active" href="#">Главная</a>
             </li>
             <li class="site-list__item">
                 <a href="catalog.html">Каталог продукции</a>
@@ -118,8 +118,10 @@
         </section>
         <section class="example__img">
           <div class="cat__wrapper">
-            <img class="cat__img" src="img/cat-fat.png" alt="">
-            <img class="cat__img visually-hidden" src="../source/img/cat-thin.png" alt="">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider-cat-tablet.png">
+              <img class="cat__img" src="img/cat-fat.png" alt="">
+            </picture>
           </div>
           <div class="cat__wrapper-slide">
             <button class="cat__button" type="button" name="button">было</button>

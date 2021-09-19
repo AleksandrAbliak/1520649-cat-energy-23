@@ -1,6 +1,6 @@
 .button {
   padding: 10px 20px;
-  background-color: #68b738;
+  background-color: $basic_green;
   font-family: $Oswald;
   font-size: 14px;
   font-style: normal;
@@ -10,4 +10,14 @@
   color: #ffffff;
   border: none;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .button:hover {
+    background-color: #5EAA2F;
+  }
+
+  .button:active {
+    opacity: 0.3;
+  }
 }

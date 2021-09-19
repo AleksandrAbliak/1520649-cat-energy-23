@@ -168,7 +168,7 @@
 @media (min-width: $desktop-width) {
   .purpose {
     display: flex;
-    margin-top: 100px;
+    margin-top: 228px;
     width: 1220px;
   }
 
@@ -228,6 +228,10 @@
     background-image: url("../img/arrow.svg");
     margin-left: 10%;
     margin-top: 8px;
+  }
+
+  .purpose__link:hover {
+    opacity: 0.3;
   }
 
   .purpose__item--strong {

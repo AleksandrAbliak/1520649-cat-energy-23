@@ -59,6 +59,10 @@
   text-align: center;
 }
 
+.example__wrapper-span {
+  display: flex;
+}
+
 .example__cost {
   font-family: $Oswald;
   font-size: 14px;
