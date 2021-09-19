@@ -3,6 +3,7 @@
   padding-left: 20px;
   padding-top: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .contacts__title {
@@ -24,6 +25,13 @@
   line-height: 20px;
   text-align: left;
   color: #444444;
+}
+
+.contacts__map {
+  border: 0;
+  width: 320px;
+  height: 365px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -49,5 +57,10 @@
     font-size: 16px;
     margin-right: 71px;
     text-align: right;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 400px;
   }
 }
