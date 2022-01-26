@@ -27,6 +27,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .section-item {
+    display: flex;
+
+    ::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/catalog-img/plus1.svg");
+    }
+  }
+
+  .section-item__wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #F2F2F2;
+    padding: 183px 37px 39px; 
+    margin-top: 63px;
+  }
   .section-item__paragraph {
     font-size: 20px;
     line-height: 22px;
@@ -39,7 +58,6 @@
   }
 
   .section-item__link {
-    width: 248px;
-    margin: 0 auto;
+    padding: 10px 0px;
   }
 }

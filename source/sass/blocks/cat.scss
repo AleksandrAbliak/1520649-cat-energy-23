@@ -9,16 +9,6 @@
 .cat__wrapper-slide {
   display: flex;
   justify-content: space-around;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 84px;
-    height: 14px;
-    background-image: url("../img/slider-mobile.svg");
-    background-repeat: no-repeat;
-    margin-top: 9px;
-  }
 }
 
 .cat__button {
@@ -60,6 +50,10 @@
     width: 339px;
   }
 
+  .cat__button {
+    padding: 0;
+  }
+
   .cat__wrapper-thin {
     margin-left: 106px;
     z-index: 1;
@@ -67,6 +61,26 @@
 
   .cat__wrapper-slide {
     padding-top: 388px;
+  }
+
+  .cat__scale {
+    width: 428px;
+    height: 6px;
+    padding: 0;
+    background-color: #dcdcdc;
+    margin-top: 8px;
+  }
+
+  .cat__button-scale {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 11px solid $white;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: $basic_green;
+    margin-top: -14px;
+    margin-left: 172px;
   }
 }
 

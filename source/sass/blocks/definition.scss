@@ -88,6 +88,7 @@
   .definition__wrapper {
     width: $tablet-width;
     margin: 0 auto;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .definition__list {
@@ -95,6 +96,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 122px;
+    margin-bottom: 104px;
   }
 
   .definition__item--leaf {
@@ -124,6 +126,7 @@
         line-height: 280px;
         bottom: -37px;
         margin-left: 121px;
+        z-index: -1;
       }
     }
   }
@@ -154,6 +157,7 @@
         line-height: 280px;
         bottom: -37px;
         margin-left: 121px;
+        z-index: -1;
       }
     }
   }
@@ -184,6 +188,7 @@
         line-height: 280px;
         bottom: -37px;
         margin-left: 121px;
+        z-index: -1;
       }
     }
   }
@@ -215,6 +220,7 @@
         line-height: 280px;
         bottom: -37px;
         margin-left: 121px;
+        z-index: -1;
       }
     }
   }
